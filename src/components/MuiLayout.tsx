@@ -1,30 +1,59 @@
-import { Stack, Box } from "@mui/material"
+import { Stack, Box, Divider, Grid, Paper } from "@mui/material"
 
 export const MuiLayout = () => {
   return (
-    <Stack sx={{ border: "1px solid" }} direction="row">
-      <Box
-        sx={{
-          backgroundColor: "primary.main",
-          color: "white",
-          height: "100px",
-          width: "100px",
-          padding: "16px",
-
-          "&:hover": {
-            backgroundColor: "primary.light",
-          },
-        }}
+    <Paper sx={{ padding: "32px" }} elevation={3}>
+      <Stack
+        sx={{ border: "1px solid" }}
+        direction="row"
+        spacing={2}
+        divider={<Divider orientation="vertical" flexItem />}
       >
-        prg
-      </Box>
-      <Box
-        display="flex"
-        height="100px"
-        width="100px"
-        bgcolor="success.light"
-        p={2}
-      ></Box>
-    </Stack>
+        <Box
+          sx={{
+            backgroundColor: "primary.main",
+            color: "white",
+            height: "100px",
+            width: "100px",
+            padding: "16px",
+
+            "&:hover": {
+              backgroundColor: "primary.light",
+            },
+          }}
+        >
+          prg
+        </Box>
+        <Box
+          display="flex"
+          height="100px"
+          width="100px"
+          bgcolor="success.light"
+          p={2}
+        ></Box>
+      </Stack>
+      <Grid container my={4} rowSpacing={2} columnSpacing={1}>
+        <Grid item xs={12} sm={9} md={6} lg={3}>
+          <Box bgcolor="success.light" p={2}>
+            Item 1
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={9} md={6} lg={3}>
+          <Box bgcolor="ButtonFace" p={2}>
+            Item 2
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={9} md={6} lg={3}>
+          <Box bgcolor="CaptionText" p={2}>
+            Item 3
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={9} md={6} lg={3}>
+          <Box bgcolor="primary.light" p={2}>
+            Item 3
+          </Box>
+        </Grid>
+      </Grid>
+    </Paper>
   )
 }
