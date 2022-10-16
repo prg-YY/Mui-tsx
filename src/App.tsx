@@ -1,6 +1,15 @@
 import "./App.css"
-import { MuiAvatar } from "./components/MuiAvatar"
-import { MuiBottomNavigation } from "./components/MuiBottomNavigation"
+import { MuiProgress } from "./components/MuiProgress"
+// import { MuiDialog } from "./components/MuiDialog"
+// import { MuiAlert } from "./components/MuiAlert"
+// import { MuiSnackBar } from "./components/MuiSnackBar"
+// import { MuiTable } from "./components/MuiTable"
+// import { MuiToolTip } from "./components/MuiToolTip"
+// import { MuiChip } from "./components/MuiChip"
+// import { MuiAvatar } from "./components/MuiAvatar"
+// import { MuiBadge } from "./components/MuiBadge"
+// import { MuiBottomNavigation } from "./components/MuiBottomNavigation"
+// import { MuiList } from "./components/MuiList"
 // import { MuiBreadCrumbs } from "./components/MuiBreadCrumbs"
 // import { MuiDrawer } from "./components/MuiDrawer"
 // import { MuiSpeedDial } from "./components/MuiSpeedDial"
@@ -42,7 +51,15 @@ function App() {
       {/* <MuiDrawer /> */}
       {/* <MuiSpeedDial /> */}
       {/* <MuiBottomNavigation /> */}
-      <MuiAvatar />
+      {/* <MuiAvatar /> */}
+      {/* <MuiList /> */}
+      {/* <MuiChip /> */}
+      {/* <MuiToolTip /> */}
+      {/* <MuiTable /> */}
+      {/* <MuiAlert /> */}
+      {/* <MuiSnackBar /> */}
+      {/* <MuiDialog /> */}
+      <MuiProgress />
     </div>
   )
 }
